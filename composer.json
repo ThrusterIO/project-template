@@ -1,0 +1,32 @@
+{
+    "name": "thruster/${NAME_CAN}$",
+    "type": "library",
+    "description": "Thruster ${NAME}$ ${PROJECT_TYPE}$",
+    "keywords": ["${NAME_CAN}$", "thruster"],
+    "homepage": "https://thruster.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "${AUTHOR}$",
+            "email": "${EMAIL}$"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.1"
+    },
+    "autoload": {
+        "psr-4": { "Thruster\\${PROJECT_TYPE}$\\${NAME}$\\": "src" }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-ci": "vendor/bin/phpunit -c phpunit.xml.ci"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
