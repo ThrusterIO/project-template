@@ -2,7 +2,10 @@
     "name": "thruster/${NAME_CAN}$",
     "type": "library",
     "description": "Thruster ${NAME}$ ${PROJECT_TYPE}$",
-    "keywords": ["${NAME_CAN}$", "thruster"],
+    "keywords": [
+        "${NAME_CAN}$",
+        "thruster"
+    ],
     "homepage": "https://thruster.io",
     "license": "MIT",
     "authors": [
@@ -12,21 +15,40 @@
         }
     ],
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.3",
+        "ext-curl": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "~5.1"
+        "phpunit/phpunit": "^8",
+        "friendsofphp/php-cs-fixer": "^2"
     },
     "autoload": {
-        "psr-4": { "Thruster\\${PROJECT_TYPE}$\\${NAME}$\\": "src" }
+        "psr-4": {
+            "Thruster\\${NAME}$\\": "src"
+        },
+        "classmap": [
+            "src/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Thruster\\${NAME}$\\Tests\\": "tests"
+        }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-ci": "vendor/bin/phpunit -c phpunit.xml.ci"
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html build/html/",
+        "check-style": "php-cs-fixer fix --dry-run --diff --diff-format udiff",
+        "fix-style": "php-cs-fixer fix",
+        "phpcs-ci": "phpcs --standard=psr2 src/",
+        "test-ci": "phpunit --coverage-text --coverage-clover=coverage.clover"
     },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
         }
+    },
+    "config": {
+        "sort-packages": true
     }
 }

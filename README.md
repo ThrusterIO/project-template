@@ -1,20 +1,13 @@
-# ${NAME}$ ${PROJECT_TYPE}$
+# ${NAME}$
 
-[![Latest Version](https://img.shields.io/github/release/ThrusterIO/${NAME_CAN}$.svg?style=flat-square)]
-(https://github.com/ThrusterIO/${NAME_CAN}$/releases)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)]
-(LICENSE)
-[![Build Status](https://img.shields.io/travis/ThrusterIO/${NAME_CAN}$.svg?style=flat-square)]
-(https://travis-ci.org/ThrusterIO/${NAME_CAN}$)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/ThrusterIO/${NAME_CAN}$.svg?style=flat-square)]
-(https://scrutinizer-ci.com/g/ThrusterIO/${NAME_CAN}$)
-[![Quality Score](https://img.shields.io/scrutinizer/g/ThrusterIO/${NAME_CAN}$.svg?style=flat-square)]
-(https://scrutinizer-ci.com/g/ThrusterIO/${NAME_CAN}$)
-[![Total Downloads](https://img.shields.io/packagist/dt/thruster/${NAME_CAN}$.svg?style=flat-square)]
-(https://packagist.org/packages/thruster/${NAME_CAN}$)
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Software License][ico-license]](LICENSE)
+[![Build Status][ico-travis]][link-travis]
+[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
+[![Quality Score][ico-code-quality]][link-code-quality]
+[![Total Downloads][ico-downloads]][link-downloads]
 
-[![Email](https://img.shields.io/badge/email-team@thruster.io-blue.svg?style=flat-square)]
-(mailto:team@thruster.io)
+[![Email][ico-email]][link-email]
 
 The Thruster ${NAME}$ ${PROJECT_TYPE}$.
 
@@ -29,10 +22,30 @@ $ composer require thruster/${NAME_CAN}$
 
 ## Testing
 
+Run test cases
+
 ```bash
 $ composer test
 ```
 
+Run test cases with coverage (HTML format)
+
+
+```bash
+$ composer test-coverage
+```
+
+Run PHP style checker
+
+```bash
+$ composer check-style
+```
+
+Run PHP style fixer
+
+```bash
+$ composer fix-style
+```
 
 ## Contributing
 
@@ -42,3 +55,18 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details
 ## License
 
 Please see [License File](LICENSE) for more information.
+
+[ico-version]: https://img.shields.io/packagist/v/ThrusterIO/${NAME_CAN}$.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/ThrusterIO/${NAME_CAN}$/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/ThrusterIO/${NAME_CAN}$.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/ThrusterIO/${NAME_CAN}$.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/thruster/${NAME_CAN}$.svg?style=flat-square
+[ico-email]: https://img.shields.io/badge/email-team@thruster.io-blue.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/thruster/${NAME_CAN}$
+[link-travis]: https://travis-ci.org/ThrusterIO/${NAME_CAN}$
+[link-scrutinizer]: https://scrutinizer-ci.com/g/ThrusterIO/${NAME_CAN}$/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/ThrusterIO/${NAME_CAN}$
+[link-downloads]: https://packagist.org/packages/thruster/${NAME_CAN}$
+[link-email]: mailto:team@thruster.io
